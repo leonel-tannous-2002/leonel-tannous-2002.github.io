@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Curriculum - Tomás Tallereco</title> 
+    <!--Por razones legales, cualquier similitud con gente real es pura coincidencia-->
+
+    <!--Bootstrap CSS-->
+    <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" 
+    crossorigin="anonymous">
+
+    <link 
+    href="css/estilos.css" 
+    rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="d-flex contenedor">
+            <div class="col-12">
+                <div class="card border-2 mb-3">
+                    <div class="card-header">
+                        <h1><b>Tomás Tallereco</h1>
+                        Compositor musical</b>
+                    </div>
+                    <ul class="nav nav-justified align-self-center" style="width:95%">
+                        <li class="nav-item rounded selector" onclick='seleccionar(0, self)'>
+                            Sobre mí
+                        </li>
+                        <li class="nav-item rounded selector" onclick='seleccionar(1, self)'>
+                            Resumen Laboral
+                        </li>
+                        <li class="nav-item rounded selector" onclick='seleccionar(2, self)'>
+                            Portafolio
+                        </li>
+                    </ul>
+                </div>
+
+
+
+                <div class="card border-2 mb-1 pagina" style="display:none;" id="sobre">
+                    <div class="card-header">
+                        <div class="row row-cols-2">
+                            <div class="col">
+                                <b>Edad:</b><br>54 Años
+                            </div>
+                            <div class="col">
+                                <b>Nacimiento:</b><br>18/02/1968
+                            </div>
+                            <div class="col">
+                                <b>Nacionalidad:</b><br>EE. UU.
+                            </div>
+                            <div class="col">
+                                <b>E-Mail:</b><br>mail@falso.com
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="clearfix">
+                            <img class="col-3 col-lg-2 float-end mb-3 ms-3"
+                            src="img/tallereco.png"
+                            alt="Tommy Tallarico? Nunca escuché ese nombre en mi vida.">
+                            <p>Compositor musical con experiencia en la industria de conciertos 
+                            en vivo y la industria de videojuegos.</p>
+                            <p>Presidente de Intelevisión Entretenimiento<sup>TM</sup>.
+                            </p>
+                            <p>Ganador de <a href="img/guinness.jpg">2 premios Guinness</a>.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card border-2 mb-1 pagina" style="display:none;" id="resumen">
+                    <div class="card-body">
+                        <p><strong>Intelevisión Entretenimiento<sup>TM</sup></strong></p>
+                        <p>
+                            CEO (2018-2022)<br>
+                            Presidente (2018-presente)
+                        </p>
+                        <p><strong>Tomás Tallereco Studios<sup>TM</sup></strong></p>
+                        <p>
+                            Fundador (1994)<br>
+                            Compositor musical (1994-presente)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card border-2 mb-1 pagina" style="display:none;" id="portafolio">
+                    <div class="card-body">
+                        <p>Ejemplo de mi trabajo como compositor:</p>
+                        <audio class="wp-audio-shortcode" preload="none" 
+                        style="width: 100%;" controls><source type="audio/mpeg" 
+                        src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/3f/d5/3b/3fd53bb8-e223-f4d7-cc37-6ee4f49daf23/mzaf_4928859886869692597.plus.aac.p.m4a?_=1" />
+                        <a href="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/3f/d5/3b/3fd53bb8-e223-f4d7-cc37-6ee4f49daf23/mzaf_4928859886869692597.plus.aac.p.m4a">
+                            https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/3f/d5/3b/3fd53bb8-e223-f4d7-cc37-6ee4f49daf23/mzaf_4928859886869692597.plus.aac.p.m4a
+                        </a></audio>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--JS selector de pagina-->
+    <script src="js/selector.js"></script>
+</body>
+
+<footer class="fixed-bottom">
+    <small class="text-muted">
+        (Por razones legales, toda similitud con 
+        <a href="tallarico.html">personas reales</a> 
+        es pura coincidencia.)
+    </small>
+</footer>
+
+</html>

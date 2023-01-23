@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(46, 97, 97);
+    margin-bottom:100px!important;
+}
+
+footer {
+    background-color: lightgray;
+    padding: 20px;
+}
+
+.contenedor {
+    margin-left: 8.333%;
+    margin-right: 8.333%;
+    margin-top: 6%;
+}
+
+.pagina {
+    min-height:200px;
+}
+
+.selector {
+    padding: 12px;
+}
+
+.selector:hover {
+    background-color: rgb(105, 255, 192);
+    color: rgb(45, 78, 68);
+}
+
+.selector:active {
+    background-color: rgb(188, 255, 243);
+    color: rgb(0, 189, 110);
+}
+
+.selector.active {
+    background-color: rgb(0, 238, 139);
+    color: aliceblue;
+}
